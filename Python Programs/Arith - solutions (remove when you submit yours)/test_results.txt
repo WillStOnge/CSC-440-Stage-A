@@ -1,0 +1,9 @@
+## Arith.py
+
+smcho@mini Arith - solutions> python -m doctest Arith.py
+smcho@mini Arith - solutions> python -m unittest ArithTest.py 
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK

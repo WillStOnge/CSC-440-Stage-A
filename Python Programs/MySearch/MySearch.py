@@ -1,0 +1,2 @@
+def mysearch(input, value):
+    
