@@ -1,7 +1,7 @@
 def my_search(input_file, value):
     input_list = []
-    f = open(input_file, "r")
-    for line in f:
+    in_file = open(input_file, "r")
+    for line in in_file:
         input_list.append(int(line))
     return linear_search(input_list, value)
 
