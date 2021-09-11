@@ -18,7 +18,9 @@ SECRET MESSAGE!!
 
 {% block content %}
     <div class="container">
+        {% filter upper %}
         <p>Current working directory: <u>{{dir}}</u></p>
+        {% endfilter %}
 
         <p>List of teammates:</p>
         <ul>
