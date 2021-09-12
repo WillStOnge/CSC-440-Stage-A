@@ -1,13 +1,9 @@
 def my_search(input_file, value):
     input_list = []
-    in_file = open(input_file, "r")
-    for line in in_file:
-        input_list.append(int(line))
-    return linear_search(input_list, value)
-
-
-def linear_search(array_of_values, value):
-    for i in range(len(array_of_values)):
-        if array_of_values[i] == value:
-            return i
-    return -1
+    with open(input_file, "r") as in_file:
+        for line in in_file:
+            input_list.append(int(line))
+    try:
+        return input_list.index(value)
+    except ValueError:
+        return -1
