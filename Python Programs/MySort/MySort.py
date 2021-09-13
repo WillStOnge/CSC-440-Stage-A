@@ -7,10 +7,8 @@ Course: CSC440
 
 
 def my_sort(input_file):
-    input_list = []
-    in_file = open(input_file, "r")
-    for line in in_file:
-        input_list.append(int(line))
-    in_file.close()
-    input_list.sort()
-    return input_list
+    try:
+        with open(input_file, "r") as in_file:
+            return sorted(int(x) for x in in_file.read().splitlines())
+    except FileNotFoundError:
+        print("File does not exist")
