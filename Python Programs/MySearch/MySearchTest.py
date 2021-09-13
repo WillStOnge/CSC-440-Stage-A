@@ -1,13 +1,31 @@
+"""
+MySearchTest.py
+Programmer: Anthony Bosch
+Course: CSC440
+"""
+
+import unittest
 from MySearch import my_search
 
 
-def main():
-    input_file = "input.txt"
-    user_num = int(input("Enter a number: "))
-    value = my_search(input_file, user_num)
+class MySearchTest(unittest.TestCase):
+    """
+        Test cases for my_search()
+    """
 
-    print("Element " + str(user_num) + " is at index: " + str(value))
+    def test_search_pass(self):
+        index = my_search("input.txt", 8)
+        self.assertEqual(index, 6)
+
+    def test_search_fail(self):
+        index = my_search("input.txt", 0)
+        self.assertEqual(index, -1)
+
+    def test_open_file(self):
+        with self.assertRaises(FileNotFoundError):
+            index = my_search("my_file.txt", 8)
 
 
 if __name__ == "__main__":
-    main()
+    unittest.main()
+
