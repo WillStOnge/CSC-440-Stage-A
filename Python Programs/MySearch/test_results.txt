@@ -1,2 +1,20 @@
 ## MySearch.py
 
+The ``test_results`` module
+===========================
+
+Using ``MySearch``
+------------------
+
+This is an example text file in reStructuredText format.  First import
+``my_search`` from the ``MySearch`` module:
+
+    >>> from MySearch import my_search
+
+Now use it:
+
+    >>> my_search("input.txt", 1)
+    -1
+
+    >>> my_search("input.txt", 8)
+    6
