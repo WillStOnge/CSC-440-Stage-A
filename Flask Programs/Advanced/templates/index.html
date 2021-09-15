@@ -1,0 +1,38 @@
+{% extends "bootstrap/base.html" %}
+
+{% macro secret() -%}
+SECRET MESSAGE!!
+{% endmacro -%}
+
+{{ banner() }}
+
+{% block title %}Advanced{% endblock %}
+
+{% block navbar %}
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('index') }}">Advanced Flask and Jinja!</a>
+        </div>    
+    </nav>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        {% filter upper %}
+        <p>Current working directory: <u>{{dir}}</u></p>
+        {% endfilter %}
+
+        <p>List of teammates:</p>
+        <ul>
+        {% for name in teammate_names %}
+            <li>{{name}}</li>
+        {% endfor %}
+        </ul>
+
+        {% if display %}
+            <strong>{{secret()}}</strong>
+        {% else %}
+            <p>Nothing to see here!</p>
+        {% endif %}
+    </div>
+{% endblock %}
