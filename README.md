@@ -6,6 +6,6 @@ The team leader for this stage was [Will Sie](https://github.com/Willsie).
 
 Other collaborators were:
 - [Will St. Onge](https://github.com/WillStOnge)
-- [Cory Knoll](https://github.com/)
+- [Cory Knoll](https://github.com/kryptonianCodeMonkey)
 - [Justin Gallagher](https://github.com/ThisJustin-code)
 - [Anthony Bosch](https://github.com/boscha1)
