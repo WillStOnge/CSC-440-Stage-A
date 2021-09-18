@@ -1,1 +1,31 @@
 ## MySort.py
+
+-------------------
+Running Unit Tests:
+-------------------
+
+(env) Justin Gallagher\PycharmProjects\CSC_440_Stage_A\Python Programs\MySort>python -m unittest MySortTest.py
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+
+
+
+
+
+
+
+----------------
+Running DocTest:
+----------------
+
+(env) Justin Gallagher\PycharmProjects\CSC_440_Stage_A\Python Programs\MySort>python -m doctest MySort.py
+
+No output received, DocTest ran successfully.
+
+
+
+
+
