@@ -1,0 +1,13 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Form Example{% endblock %}
+
+{% block navbar %}
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('index') }}">Home</a>
+            <a class="navbar-brand" href="{{ url_for('student') }}">Student</a>
+            <a class="navbar-brand" href="{{ url_for('financial') }}">Financial Aid</a>
+        </div>
+    </nav>
+{% endblock %}
