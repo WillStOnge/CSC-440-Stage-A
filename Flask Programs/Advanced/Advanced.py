@@ -11,4 +11,4 @@ def index():
     return render_template("index.html", app = app, teammate_names = teammate_names, dir = os.getcwd(), display = (random.randint(1, 10) == 1))
 
 if __name__ == "__main__":
-    app.run(debug = True)
+    app.run()

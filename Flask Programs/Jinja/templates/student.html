@@ -1,0 +1,35 @@
+{% extends "header.html" %}
+
+{% block content %}
+    <div class="container">
+        {% if student_information %}
+            <h1>Welcome to your student information page !</h1>
+            You are enrolled in {{ student_information.semester }} semester and your classes are :
+
+            <ol>
+            {% for class in student_information.classes %}
+                <li>
+                {{ class }}
+                </li>
+            {% endfor %}
+            </ol>
+
+        <table>
+            <tr>
+                <th>Classes</th>
+                <th>Grades</th>
+            </tr>
+            {% for class in student_information.classes %}
+            {% set class_code = class|truncate(7, True, '') %}
+            <tr>
+                <td style="width: 70%">{{ class_code }}</td>
+                <td>
+                  {{ student_grades[class_code] }}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% endif %}
+
+    </div>
+{% endblock %}

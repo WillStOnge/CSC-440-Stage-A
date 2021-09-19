@@ -26,5 +26,4 @@ def not_found(e):
 
 if __name__ =="__main__":
     # starts the server and flask application
-    # debug=True should only be in dev environment, not production
-    app.run(debug=True)
+    app.run()

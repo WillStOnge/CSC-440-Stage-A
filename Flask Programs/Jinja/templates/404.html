@@ -1,0 +1,10 @@
+{% extends "header.html" %}
+
+{% block title %}Page Not Found{% endblock %}
+
+{% block body %}
+  
+  <h1>Oops - 404 ... looks like the page doesn't exist !</h1>
+  <a href="{{ url_for('index') }}"><p>Click Here</a> to go to the Home Page</p>
+  
+{% endblock %}
