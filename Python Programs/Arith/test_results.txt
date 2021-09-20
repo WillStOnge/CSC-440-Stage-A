@@ -1,5 +1,9 @@
 ## Arith.py
 
+-------------------
+Running Unit Tests:
+-------------------
+
 C:\Users\DaddysBaby2\AppData\Local\Microsoft\WindowsApps\python3.9.exe "C:\Program Files\JetBrains\PyCharm 2021.2\plugins\python\helpers\pycharm\_jb_unittest_runner.py" --target ArithTest.ArithTest
 Testing started at 6:25 PM ...
 Launching unittests with arguments python -m unittest ArithTest.ArithTest in C:\Users\DaddysBaby2\OneDrive\School_Materials\NKU\4_2021_Fall\CSC 440 - Software Engineering\A Stage\A Stage\Last-First-A-Stage\Python Programs\Arith
@@ -11,3 +15,15 @@ Ran 2 tests in 0.005s
 OK
 
 Process finished with exit code 0
+
+
+
+
+
+----------------
+Running DocTest:
+----------------
+
+(env) python -m doctest Arith.py
+
+No output received, DocTest ran successfully.
