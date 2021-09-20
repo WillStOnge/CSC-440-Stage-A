@@ -1,2 +1,26 @@
 ## MySearch.py
 
+-------------------
+Running Unit Tests:
+-------------------
+
+(p3) C:\Users\bosch\OneDrive\NKU Fall 2021\CSC 440\Project\A Stage\Repo\CSC_440_Stage_A\Python Programs\MySearch>python -m unittest MySearchTest.py
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.004s
+
+OK
+
+
+
+
+
+
+
+----------------
+Running DocTest:
+----------------
+
+(p3) C:\Users\bosch\OneDrive\NKU Fall 2021\CSC 440\Project\A Stage\Repo\CSC_440_Stage_A\Python Programs\MySearch>python -m doctest MySearch.py
+
+No output received, DocTest ran successfully.
