@@ -1,20 +1,26 @@
 ## MySearch.py
 
-The ``test_results`` module
-===========================
+-------------------
+Running Unit Tests:
+-------------------
 
-Using ``MySearch``
-------------------
+(p3) C:\Users\bosch\OneDrive\NKU Fall 2021\CSC 440\Project\A Stage\Repo\CSC_440_Stage_A\Python Programs\MySearch>python -m unittest MySearchTest.py
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.004s
 
-This is an example text file in reStructuredText format.  First import
-``my_search`` from the ``MySearch`` module:
+OK
 
-    >>> from MySearch import my_search
 
-Now use it:
 
-    >>> my_search("input.txt", 1)
-    -1
 
-    >>> my_search("input.txt", 8)
-    6
+
+
+
+----------------
+Running DocTest:
+----------------
+
+(p3) C:\Users\bosch\OneDrive\NKU Fall 2021\CSC 440\Project\A Stage\Repo\CSC_440_Stage_A\Python Programs\MySearch>python -m doctest MySearch.py
+
+No output received, DocTest ran successfully.
